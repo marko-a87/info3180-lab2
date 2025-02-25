@@ -1,0 +1,49 @@
+{% extends "base.html" %} {% block main %}
+<div class="profile">
+  <img
+    class="profile_img"
+    src="{{ url_for('static', filename='image.png') }}"
+  />
+
+  <div class="content">
+    <h1>Shamar Malcolm</h1>
+    <p>@smalcolm</p>
+    <p>Kingston, Jamaica</p>
+    <p>{{date}}</p>
+  </div>
+</div>
+
+<div class="contact">
+  <div class="bio">
+    <p>
+      I am a computer science student who likes to build web apps, play video
+      games and watch movies. I have a github account that shows previous
+      projects I have worked on for both school and as a hobby.
+    </p>
+  </div>
+
+  <div class="posts">
+    <div class="post_size">
+      <p>7</p>
+    </div>
+    <p>Posts</p>
+  </div>
+
+  <div class="following">
+    <div class="following_size">
+      <p>100</p>
+    </div>
+    <p>Following</p>
+  </div>
+
+  <div class="followers">
+    <div class="followers_size">
+      <p>250</p>
+    </div>
+    <p>Followers</p>
+  </div>
+</div>
+
+<button class="follow">Follow</button>
+
+{% endblock %}
